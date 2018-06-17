@@ -1,21 +1,44 @@
-#navbar {
-  background-color: #333; /* Makes background color black */
-  position: fixed; /* Makes the navbar stick/fixed */
-  top: -50px; /* Hides the navbar 50px outside of the top view */
-  width: 100%; /* Full Width bar */
-  text-align: right;
-  transition: top 0.3s; /* Creates transition effect when sliding down/up */
-}
-#navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: right;
-  padding: 15px;
-  text-decoration: none;
-}
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-  
+/* HTML & BODY CSS */
+
+/* CLASSES & IDs */
+
+  /* ---Classes--- */
+    .mainContent {
+      display:grid;
+      grid-template-columns: 2fr;
+    }
+    .mainContent > div {
+      background: #eee;
+      padding: 5em;
+    }
+    .navbar {
+      border:1px solid #ccc;
+      border-width:1px 0;
+      list-style:none;
+      margin:0;
+      padding:0;
+      text-align:center;
+    }
+    .navbar li {
+      display: inline;
+    }
+    .navbar a {
+      display: inline-block;
+      padding: 10px;
+      color: black;
+      text-decoration: none;
+    }
+
+  /* ---IDs--- */
+    #home {
+      background: white;
+    }
+    #about {
+
+    }
+    #portfolio {
+
+    }
+    #contact {
+
+    }
