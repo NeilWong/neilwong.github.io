@@ -14,8 +14,9 @@
     .navbar {
       /* Border:1px solid #ccc;*/
       /*border-width:1px 0;*/
+      background-color: black;
       list-style:none;
-      margin:0;
+      margin:auto;
       padding:0;
       text-align:center;
     }
@@ -25,20 +26,43 @@
     .navbar a {
       display: inline-block;
       padding: 10px;
-      color: black;
+      color: white;
       text-decoration: none;
+    }
+    .navbar a.active {
+      border-bottom: white;
     }
 
   /* ---IDs--- */
+    #navbar {
+      background-color: black;
+      list-style:none;
+      margin:0;
+      padding:0;
+      text-align:center;
+    }
+    #mavbar li {
+      display: inline;
+    }
+    #navbar a {
+      display: inline-block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+    }
+    #navbar a.active {
+      border-bottom: white;
+    }
     #home {
       background: white;
+      margin: auto;
     }
     #about {
-
+      background: black;
+    }
+    #about p {
+      color: white;
     }
     #portfolio {
-
-    }
-    #contact {
 
     }

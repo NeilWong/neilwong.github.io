@@ -2,6 +2,20 @@
 // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
 window.onscroll = function() {scrollFunction()};
 
+var navbar = index.html.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  }
+  else {
+    narvar.classList.remove("sticky");
+  }
+}
+
+/*
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbar").style.top = "0";
@@ -9,3 +23,4 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-50px";
   }
 }
+*/
