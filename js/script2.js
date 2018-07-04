@@ -1,6 +1,6 @@
 // Cache selectors
 var lastId,
- topMenu = $("#navlist"),
+ topMenu = $("#mainNav"),
  topMenuHeight = topMenu.outerHeight()+1,
  // All list items
  menuItems = topMenu.find("a"),
