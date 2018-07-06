@@ -22,6 +22,7 @@ nav a:hover {
   text-decoration: none;
   transition: all ease-in-out 175ms;
 }
+nav
 /* Classes */
 .navbar-nav > ul {
   float: right;
@@ -30,7 +31,7 @@ nav a:hover {
 /* IDs */
 #home {
   height: 100vh;
-  background: green;
+  background: orange;
 }
 #about {
   height: 100vh;
