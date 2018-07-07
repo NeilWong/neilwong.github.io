@@ -10,15 +10,21 @@
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <!-- Other addons -->
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <!-- CSS & JS -->
-  <link rel = "stylesheet" type = "text/css" href = "css/index2.css" />
-  <script src="js/script2.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/background.js"></script>
+  <script type='text/javascript' src='js/jquery.particleground.js'></script>
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel = "stylesheet" type = "text/css" href = "css/index.css" />
+
 </head>
 <body>
+  <div id="top">
   <nav class="navbar navbar-inverse navbar-fixed-top" id='navbar'>
     <div class="container-fluid">
       <div class="navbar-header">
@@ -27,65 +33,47 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#home">Home</a></li>
+        <a class="navbar-brand" href="#home">NEIL WONG</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right" id='navlist'>
-          <li><a href="#home" id="navhome">Home</a></li>
-          <li><a href="#about"id="navabout">About</a></li>
-          <li><a href="#projects" id="navprojects">Projects</a></li>
-          <li><a href="#contact" id="navcontact">Contact</a></li>
+          <li><a href="#home" id="navhome">HOME</a></li>
+          <li><a href="#about" id="navabout">ABOUT</a></li>
+          <li><a href="#projects" id="navprojects">PROJECTS</a></li>
+          <li><a href="#contact" id="navcontact">CONTACT</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <section id="home">
-    a
+  </div>
+  <div id="particles">
+    <div id="intro">
+      <h1>Particleground</h1>
+    </div>
   </section>
   <section id="about">
     <p> About Me </p>
   </section>
   <section id="projects">
-    projects
+    <p>projects </p>
   </section>
   <section id="contact">
     <div id="contactinfo">
       <div id="contactme">
         <p> Let's get in touch! </p>
       </div>
-      <div id="icons">
-        <ul>
-          <div>
-            <li><a href="mailto:neil.wong75@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
-            <p id="email">Email</p>
-          </div>
-          <div>
-            <li><a href="https://github.com/NeilWong"><i class="fab fa-github-square"></i></a></li>
-            <p id="github">Github</p>
-          </div>
-          <div>
-            <li><a href="https://ww.linkedin.com/in/neilkenwong/"><i class="fab fa-linkedin"></i></a></li>
-            <p id="linkedin">Linkedin</p>
-          </div>
-          <div>
-            <li><a href="https://drive.google.com/file/d/1zubI_l5aTgN58h3iGu7clNFS-8llj3R3/view?usp=sharing"><i class="fas fa-file-alt"></i></a></li>
-            <p id="resume">Resume</p>
-          </div>
-        </ul>
-      </div>
+      <ul id="iconslist">
+          <li><a href="mailto:neil.wong75@gmail.com"><i class="fas fa-envelope-square"></i></a><p id="email">Email</p></li>
+          <li><a href="https://github.com/NeilWong"><i class="fab fa-github-square"></i></a><p id="github">Github</p></li>
+          <li><a href="https://www.linkedin.com/in/neilkenwong/"><i class="fab fa-linkedin"></i></a><p id="linkedin">Linkedin</p></li>
+          <li><a href="https://drive.google.com/file/d/1zubI_l5aTgN58h3iGu7clNFS-8llj3R3/view?usp=sharing"><i class="fas fa-file-alt"></i></a><p id="resume">Resume</p></li>
+      </ul>
     </div>
     <footer id="copyright">
-      <p id="">© 2018 Neil Wong</p>
+      <p>© 2018 Neil Wong</p>
       <p>Email: neil.wong75@gmail.com </p>
       <p id="number">Mobile Number: (415)-602-1780 </p>
     </footer>
   </section>
-
 </body>
 </html>
-<!--
-<li><a href="#home" id="navhome"><i class="fas fa-home"></i></a></li>
-<li><a href="#about"id="navabout"><i class="fas fa-user"></i></a></li>
-<li><a href="#projects" id="navprojects"><i class="fas fa-project-diagram"></i></a></li>
-<li><a href="#contact" id="navcontact"><i class="fas fa-envelope"></i></a></li>
--->

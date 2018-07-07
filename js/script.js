@@ -24,3 +24,18 @@ $(document).ready(function(){
     }  // End if
   });
 });
+
+(function($) {
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.navbar-inverse').css('background-color', '#222538')
+                $('.navbar-inverse').css('border-color', 'black')
+                $('.navbar-inverse').fadeIn(500);
+            } else {
+                $('.navbar-inverse').css('background-color', 'rgba(44,47,64,0)').fadeIn(50);
+                $('.navbar-inverse').css('border-color', 'transparent')
+            }
+        });
+    });
+})(jQuery);

@@ -1,6 +1,6 @@
 /* Default */
 body {
-
+  background-color: #222538;
 }
 /* Classes */
 .navbar-right {
@@ -12,7 +12,7 @@ body {
   margin-left: 35px;
 }
 .navbar-inverse {
-  background: #222538; !important
+  background-color: #222538; !important
 }
 .navbar-inverse .navbar-nav>li>a {
   font-size: 1.2em;
@@ -26,14 +26,18 @@ ul.nav a:hover {
 
 #home {
   height: 100vh;
-  background: #B2A29F;
+  background-color: #2C2F40;
 }
 #about {
   height: 100vh;
-  background: lightblue;
+  background-color: lightblue;
   font-size: 55px;
   font-family: 'Signika', sans-serif;
 }
+  #about #particle-canvas {
+    width: 100%;
+    height: 100%;
+  }
 #projects {
   height: 100vh;
   font-size: 55px;
@@ -41,103 +45,60 @@ ul.nav a:hover {
 }
 #contact {
   height: 95vh;
-  background: #08fbff;
+  background-color: #2C2F40;
   display: flex;
   flex-direction: column;
 }
   #contact #contactinfo {
     margin-top: auto;
     height: 100vh;
-    background: rgb(44,47,64,100);
+    background-color: #2C2F40;
     text-align: center;
+    display: table-column;
   }
-  #contact #contactme p {
-    padding-top: 10%;
-    text-align: center;
-    color: white;
-    font-size: 60px;
-  }
-  #contact #icons {
-  }
-    #contact #icons div {
-      position: relative;
-      display: inline-block;
-    }
-    #contact #icons p {
-      font-size: 2.5em;
+    #contact #contactinfo #contactme p {
+      padding-top: 10%;
+      text-align: center;
       color: white;
+      font-size: 60px;
     }
-      #email {
-        padding-left: 1.1em;
-      }
-      #github {
-        padding-left: 1.1em;
-      }
-      #linkedin {
-        padding-left: 1.1em;
-      }
-      #resume {
-        padding-left: 1.1em;
-      }
-    #contact ul{
-      padding-top: 9.5%;
-      padding-right: 50px;
-      margin: 0;
-      list-style: none;
+  #contact #contactinfo #iconslist {
+    display: inline;
+    text-align: center;
+    margin-right: 10.5em;
+  }
+    #contact #contactinfo #iconslist li {
+      display: inline-block;
       position: relative;
-      display: table;
-      margin: 0 auto;
       overflow: hidden;
     }
-    #contact li {
+    #contact #contactinfo #iconslist li p {
       display: inline-block;
-      position: relative;
+      font-size: 2em;
+      color: white;
+      padding-left: 45px;
+      overflow: auto;
+      margin-left: 3.95em;
     }
-    #contact a {
+    #contact #contactinfo #iconslist a {
       text-decoration: none;
       display: block;
       color: white;
-      font-size: 8em;
-      margin-left: 95px;
-      margin-right: 55px;
+      font-size: 7.5em;
+      margin-left: 1.5em;
+      margin-top: 1em;
     }
-    #contact a:hover {
+    #contact #contactinfo #iconslist a:hover {
       color: darkgrey;
-    }
-  #icondescriptions {
-    position: relative;
-  }
-    #icondescriptions p {
-      position: relative;
-      display: inline-block;
-      font-size: 50px;
-      color: white;
-      padding-left: 45px;
     }
   #copyright {
     padding-top: 1em;
-    display: table;
+    display: block;
     text-align: center;
     height: 5vh;
-    background: #222538;
+    background-color: #222538;
+    width: 100%;
   }
     #copyright #number {
       padding-bottom: 5px;
     }
-
-    /*
-    ul.nav #navhome:hover + #navhomepar {
-    }
-    ul.nav #navhomepar {
-      display: none;
-    }
-    ul.nav #navaboutpar {
-      display: none;
-    }
-    ul.nav #navprojectspar {
-      display: none;
-    }
-    ul.nav #navcontactpar {
-      display: none;
-    }
-    */

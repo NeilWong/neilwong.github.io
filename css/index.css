@@ -1,49 +1,106 @@
-/* General Elements */
+/* Default */
 body {
-  position: relative;
+
 }
-nav {
-  background: black;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-}
-nav a {
-  color: gray;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1em;
-  padding-bottom: 10px;
-}
-nav a:hover {
-  color: white;
-  border-bottom: 2px solid white;
-  text-decoration: none;
-  transition: all ease-in-out 175ms;
-}
-nav
 /* Classes */
-.navbar-nav > ul {
-  float: right;
-  margin: 0;
+.navbar-right {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 25px;
+}
+.navbar-right li {
+  margin-left: 35px;
+}
+.navbar-inverse {
+  background: rgba(44,47,64,0);
+  border-color: transparent; !important
+}
+.navbar-inverse .navbar-nav>li>a {
+  font-size: 1.2em;
+  font-family: 'Open Sans','Signika', sans-serif; !important
+  text-transform: uppercase;
+}
+ul.nav a:hover {
+  color: white !important;
 }
 /* IDs */
+
 #home {
   height: 100vh;
-  background: orange;
+  position: relative;
+  background-color: #2C2F40;
 }
 #about {
   height: 100vh;
-  background: beige;
+  background-color: lightblue;
+  font-size: 55px;
+  font-family: 'Signika', sans-serif;
 }
+  #about #particle-canvas {
+    width: 100%;
+    height: 100%;
+  }
 #projects {
   height: 100vh;
-  background: lightblue;
+  font-size: 55px;
+  font-family: 'Open Sans', sans-serif;
 }
 #contact {
-  height: 100vh;
+  height: 95vh;
+  background-color: #2C2F40;
+  display: flex;
+  flex-direction: column;
 }
-#navbarMainDiv {
-  background: black;
-}
+  #contact #contactinfo {
+    margin-top: auto;
+    height: 100vh;
+    background-color: #2C2F40;
+    text-align: center;
+    display: table-column;
+  }
+    #contact #contactinfo #contactme p {
+      padding-top: 10%;
+      text-align: center;
+      color: white;
+      font-size: 60px;
+    }
+  #contact #contactinfo #iconslist {
+    display: inline;
+    text-align: center;
+    margin-right: 10.5em;
+  }
+    #contact #contactinfo #iconslist li {
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+    }
+    #contact #contactinfo #iconslist li p {
+      display: inline-block;
+      font-size: 2em;
+      color: white;
+      padding-left: 45px;
+      overflow: auto;
+      margin-left: 3.95em;
+    }
+    #contact #contactinfo #iconslist a {
+      text-decoration: none;
+      display: block;
+      color: white;
+      font-size: 7.5em;
+      margin-left: 1.5em;
+      margin-top: 1em;
+    }
+    #contact #contactinfo #iconslist a:hover {
+      color: darkgrey;
+    }
+  #copyright {
+    padding-top: 1em;
+    display: block;
+    text-align: center;
+    height: fit-content;
+    background-color: #222538;
+    width: 100%;
+  }
+    #copyright #number {
+      padding-bottom: 5px;
+    }
