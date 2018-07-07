@@ -7,9 +7,6 @@
    particleground(document.getElementById('particles'), {
      dotColor: 'rgba(0,0,0,.4)',
      lineColor: 'rgba(34,37,56,.6)',
-     density: '15500',
-     parallax: 'false',
-     parallaxMultiplier: '5'
    });
    var intro = document.getElementById('intro');
    intro.style.marginTop = - intro.offsetHeight / 2 + 'px';

@@ -30,6 +30,15 @@ ul.nav a:hover {
   position: relative;
   background-color: #2C2F40;
 }
+#particles {
+  height: 100vh;
+  position: relative;
+  background-color: #2C2F40;
+}
+#intro {
+  height: 100vh;
+  position: relative;
+}
 #about {
   height: 100vh;
   background-color: lightblue;
