@@ -24,20 +24,58 @@ ul.nav a:hover {
   color: white !important;
 }
 /* IDs */
-
 #home {
   height: 100vh;
   position: relative;
   background-color: #2C2F40;
+  text-align: center;
 }
-#particles {
-  height: 100vh;
-  position: relative;
-  background-color: #2C2F40;
+  #intro {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%
+  }
+  #intro #hi {
+    padding-top: 3em;
+    padding-bottom: 25px;
+    position: relative;
+    vertical-align: center;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+  }
+  #intro #welcome {
+    position: relative;
+    vertical-align: center;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  #btn {
+  display: inline-block;
+  padding: 5px 20px;
+  padding-top: 5px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+       -o-transition: all 0.4s;
+          transition: all 0.4s;
 }
-#intro {
-  height: 100vh;
-  position: relative;
+#btn:hover {
+  color: #9d9d9d;
+  border-color: #9d9d9d;
+}
+#btn p {
+  padding-top: 10px;
 }
 #about {
   height: 100vh;
