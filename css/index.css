@@ -23,11 +23,32 @@ body {
 ul.nav a:hover {
   color: white !important;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 30% 70%;
+  grid-gap: 10px;
+  background-color: gray;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.item3 {
+  grid
+}
 /* IDs */
 #home {
   height: 100vh;
   position: relative;
-  background-color: #2C2F40;
+  background-color: #2b3259;
   text-align: center;
 }
   #intro {
@@ -42,17 +63,19 @@ ul.nav a:hover {
     padding-bottom: 25px;
     position: relative;
     vertical-align: center;
-    font-size: 4em;
+    font-size: 75px;
     color: white;
     text-align: center;
+    font-family: 'Open Sans','Signika', sans-serif;
   }
   #intro #welcome {
     position: relative;
     vertical-align: center;
-    font-size: 4em;
+    font-size: 75px;
     color: white;
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
+    font-family: 'Open Sans','Signika', sans-serif;
   }
   #btn {
   display: inline-block;
@@ -61,7 +84,7 @@ ul.nav a:hover {
   border: 2px solid #fff;
   text-transform: uppercase;
   letter-spacing: 0.015em;
-  font-size: 18px;
+  font-size: 32px;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
@@ -69,29 +92,53 @@ ul.nav a:hover {
      -moz-transition: all 0.4s;
        -o-transition: all 0.4s;
           transition: all 0.4s;
-}
-#btn:hover {
-  color: #9d9d9d;
-  border-color: #9d9d9d;
-}
-#btn p {
-  padding-top: 10px;
-}
+          font-family: 'Open Sans','Signika', sans-serif;
+  }
+  #btn:hover {
+    color: #9d9d9d;
+    border-color: #9d9d9d;
+  }
+  #btn p {
+    padding-top: 10px;
+  }
 #about {
   height: 100vh;
-  background-color: lightblue;
-  font-size: 55px;
-  font-family: 'Signika', sans-serif;
+  background-color: white	;
+  font-family: 'Open Sans','Signika', sans-serif;
 }
-  #about #particle-canvas {
-    width: 100%;
-    height: 100%;
+  #about #aboutTitle {
+    font-size: 75px;
+    padding-top: 75px;
+    text-align: center;
+    color: black;
+    font-family: 'Open Sans','Signika', sans-serif;
+  }
+  #about #pic {
+    height: 300px;
+    float: right;
+  }
+  #about #caption {
+    color: black;
+    font-size: 25px;
   }
 #projects {
   height: 100vh;
-  font-size: 55px;
   font-family: 'Open Sans', sans-serif;
+  background-color: #eee;
+  text-align: center;
 }
+  #projects #projectTitleContainer {
+    position: relative;
+    text-align: center;
+  }
+  #projects #projectTitle {
+    font-size: 75px;
+    padding-top: 75px;
+    text-align: center;
+    color: black;
+    font-family: 'Open Sans','Signika', sans-serif;
+  }
+
 #contact {
   height: 95vh;
   background-color: #2C2F40;

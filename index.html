@@ -47,21 +47,30 @@
   </nav>
   </div>
 
-
   <section id="home">
     <div id="intro">
-      <p id='hi' class='fadeIn'>Hi,</p>
-      <p id='welcome' class='fadeIn'>Welcome to my website! </p>
-      <a href="#about" id="btn" class='slideUp'><p>See More</p></a>
+      <p id='hi' class='slideUp'>Hi,</p>
+      <p id='welcome' class='slideUp'>Welcome to my website! </p>
+      <a href="#about" id="btn" class='fadeIn'><p>See More</p></a>
     </div>
   </section>
 
-  <section id="about">
-    <p> About Me </p>
+  <section id="about" class='grid-container'>
+    <div class='item1'>
+      <p id='aboutTitle'> About Me </p>
+    </div>
+    <div class='item2'>
+      <img src='https://i.pinimg.com/originals/9c/58/c9/9c58c9e2c0abd7c5d33853b9ef725697.jpg' id='pic'>
+    </div>
+    <div class='item3'>
+      <p id='caption'> I love solving problems, building strong relationships, and playing the guitar... </p>
+    </div>
   </section>
 
-  <section id="projects">
-    <p>projects </p>
+  <section id='projects'>
+    <div id='projectTitleContainer'>
+      <p id='projectTitle' class='titles'> Projects </p>
+    </div>
   </section>
 
   <section id="contact">
@@ -84,3 +93,9 @@
   </section>
 </body>
 </html>
+
+<!--
+<p> About Me </p>
+  <img src='https://i.pinimg.com/originals/9c/58/c9/9c58c9e2c0abd7c5d33853b9ef725697.jpg' id='pic'>
+  <p id='caption'> I love solving problems, building strong relationships, and playing the guitar... </p>
+-->

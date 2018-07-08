@@ -57,6 +57,7 @@ $(document).ready(function(){
         $(window).scroll(function(){
             if ($(this).scrollTop() > 100) {
                 $('.navbar-inverse').css('background-color', '#222538')
+                $('.navbar-inverse').css('border-color', 'black')
                 $('.navbar-inverse').transition('background-color 3s')
                 $('.navbar-inverse').fadeIn(500);
             } else {
