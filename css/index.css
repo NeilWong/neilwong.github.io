@@ -1,7 +1,5 @@
 /* Default */
-body {
 
-}
 /* Classes */
 .navbar-right {
   padding-left: 25px;
@@ -24,7 +22,17 @@ ul.nav a:hover {
   color: white !important;
 }
 .grid-container {
-
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 .col-sm-6 {
   text-align: center;
@@ -33,6 +41,9 @@ ul.nav a:hover {
 .col-sm-4 {
   text-align: center;
   float: center;
+}
+.grid-container {
+  display: inline-grid;
 }
 /* IDs */
 #home {
@@ -115,9 +126,11 @@ ul.nav a:hover {
   #about #caption {
     color: black;
     font-size: 33px;
+    text-align: left;
   }
   #about #content {
     font-size: 23px;
+    text-align: left;
   }
 #projects {
   height: 100vh;
@@ -187,14 +200,17 @@ ul.nav a:hover {
     #contact #contactinfo #iconslist a:hover {
       color: darkgrey;
     }
-  #copyright {
+  #copyrightContainer {
     position: absolute;
     bottom: 0;
     text-align: center;
     background-color: #222538;
     width: 100%;
   }
-    #copyright #number {
+    #copyright {
+      padding-top: 10px;
+    }
+    #copyrightContainer #number {
       padding-bottom: 5px;
     }
 
