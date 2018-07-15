@@ -1,3 +1,9 @@
+(function($) {
+  $(document).ready(function() {
+    $('.lightbox').fancybox();
+  });
+})(jQuery)
+//-----------------------------
 $(document).ready(function(){
   // Add scrollspy to <body>
   $('body').scrollspy({target: ".navbar", offset: 45});
@@ -24,7 +30,7 @@ $(document).ready(function(){
     }  // End if
   });
 });
-
+//-----------------------------------------
 $(document).ready(function(){
   // Add scrollspy to <body>
   $('body').scrollspy({target: "#home", offset: 45});
@@ -74,3 +80,4 @@ $('.navbar-inverse').css('border-color', 'black')
 $('.navbar-inverse').css.transition('background-color 1s')
 $('.navbar-inverse').css.transition("border-color 1s")
 */
+//--------- ---------------

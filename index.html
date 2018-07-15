@@ -15,6 +15,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- FancyBox CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
   <!-- CSS & JS -->
   <script src="js/script.js"></script>
   <script src="js/background.js"></script>
@@ -61,7 +64,7 @@
     </div>
       <div class="row">
         <div class="col-sm-6" >
-          <img src='https://i.pinimg.com/originals/9c/58/c9/9c58c9e2c0abd7c5d33853b9ef725697.jpg' id='pic'>
+          <img src='assets/wong_neil.jpg' id='pic'>
         </div>
         <div class="col-sm-4" >
           <p id='caption'>I love solving problems, building strong relationships, and playing the guitar... </p>
@@ -75,15 +78,21 @@
       <p id='projectTitle'> Projects </p>
     </div>
     <div class="grid-container">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
-      <div class="grid-item">7</div>
-      <div class="grid-item">8</div>
-      <div class="grid-item">9</div>
+      <div class="grid-item">
+        <a data-fancybox='group' class='lightbox' href="/assets/wong_neil.jpg" data-fancybox data-caption="Caption for single image">
+        	<img src="/assets/wong_neil.jpg" width='300' alt="" />
+        </a>
+      </div>
+      <div class="grid-item">
+        <a data-fancybox='group' class='lightbox' href="/assets/wong_neil.jpg" data-fancybox data-caption="Caption for single image">
+          <img src="/assets/wong_neil.jpg" width='300' alt="" />
+        </a>
+      </div>
+      <div class="grid-item">
+        <a data-fancybox='group' class='lightbox' href="/assets/wong_neil.jpg" data-fancybox data-caption="Caption for single image">
+          <img src="/assets/wong_neil.jpg" width='300' alt="" />
+        </a>
+      </div>
     </div>
   </section>
 
