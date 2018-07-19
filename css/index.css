@@ -18,6 +18,9 @@
   font-family: 'Open Sans','Signika', sans-serif; !important
   text-transform: uppercase;
 }
+ul {
+  list-style-type: none;
+}
 ul.nav a:hover {
   color: white !important;
 }
@@ -44,6 +47,18 @@ ul.nav a:hover {
   text-align: center;
   float: center;
 }
+.table, td, th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 15px
+}
+tr:hover {background-color: #f5f5f5;}
 
 /* IDs */
 #home {
@@ -103,6 +118,7 @@ ul.nav a:hover {
   #btn p {
     padding-top: 10px;
   }
+
 #about {
   height: auto;
   min-height: 100vh;
@@ -122,39 +138,71 @@ ul.nav a:hover {
   #about #pic {
     height: 400px;
     border-radius: 30%;
-    margin-left: 20em;
   }
   #about #caption {
     color: black;
     font-size: 33px;
     text-align: left;
+    padding-bottom: 35px;
   }
   #about #content {
     font-size: 23px;
     text-align: left;
   }
+
 #projects {
-  height: 100vh;
-  font-family: 'Open Sans', sans-serif;
   background-color: #eee;
-  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
   overflow: hidden;
 }
-  #projects #projectTitleContainer {
-    position: relative;
-    text-align: center;
-  }
-  #projects #projectTitle {
-    font-size: 75px;
-    padding-top: 75px;
-    text-align: center;
-    color: black;
-    font-family: 'Open Sans','Signika', sans-serif;
-  }
-  #projects #projectsGrid {
-    padding-top: 500px;
-    margin-top: 500px;
-  }
+    #projects #projectTitleContainer {
+      position: relative;
+      text-align: center;
+    }
+    #projects #projectTitle {
+      font-size: 75px;
+      padding-top: 75px;
+      color: black;
+      font-family: 'Open Sans','Signika', sans-serif;
+    }
+    #projects #projectUL {
+      padding-top: 75px;
+      padding-right: 35px;
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      width:100%;
+      overflow: hidden;
+    }
+      #projects #projectUL li{
+        text-align: center;
+      }
+      #projects #projectUL img {
+        height: 300px;
+        width: 400px;
+        object-fit: scale-down;
+      }
+
+      #projects #projectUL li a {
+        text-decoration: none;
+      }
+      #projects #projectUL a:hover {
+        color: gray;
+      }
+      #projects #hidden-content1 {
+        display: none;
+        width: 600px;
+        height: 400px;
+        position: relative;
+      }
+        #projects #hidden-content1 #hidden-title1 {
+          position: relative;
+          top: 0;
+          text-align: center;
+        }
 
 #contact {
   position: relative;
@@ -221,3 +269,49 @@ ul.nav a:hover {
 
     /*
     */
+    /*
+
+       Styles for animated modal
+       =========================
+
+    */
+
+    /* Start state */
+    /*
+    .animated-modal {
+      max-width: 550px;
+      border-radius: 4px;
+      overflow: hidden;
+
+      transform: translateY(-50px);
+      transition: all .7s;
+    }
+
+    .animated-modal h2,
+    .animated-modal p {
+      transform: translateY(-50px);
+      opacity: 0;
+
+      transition-property: transform, opacity;
+      transition-duration: .4s;
+    }
+*/
+    /* Final state */
+  /*
+    .fancybox-slide--current .animated-modal,
+    .fancybox-slide--current .animated-modal h2,
+    .fancybox-slide--current .animated-modal p {
+      transform: translateY(0);
+      opacity: 1;
+    }
+*/
+    /* Reveal content with different delays */
+  /*
+    .fancybox-slide--current .animated-modal h2 {
+      transition-delay: .1s;
+    }
+
+    .fancybox-slide--current .animated-modal p {
+      transition-delay: .3s;
+    }
+*/

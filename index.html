@@ -24,7 +24,6 @@
   <script type='text/javascript' src='js/jquery.particleground.js'></script>
   <link rel="stylesheet" href="css/animations.css">
   <link rel = "stylesheet" type = "text/css" href = "css/index.css" />
-
 </head>
 <body>
   <div id="top">
@@ -77,24 +76,56 @@
     <div id='projectTitleContainer'>
       <p id='projectTitle'> Projects </p>
     </div>
-    <div class="grid-container">
-      <div class="grid-item">
-        <a data-fancybox='group' class='lightbox' href="/assets/wong_neil.jpg" data-fancybox data-caption="Caption for single image">
-        	<img src="/assets/wong_neil.jpg" width='300' alt="" />
-        </a>
-      </div>
-      <div class="grid-item">
-        <a data-fancybox='group' class='lightbox' href="/assets/wong_neil.jpg" data-fancybox data-caption="Caption for single image">
-          <img src="/assets/wong_neil.jpg" width='300' alt="" />
-        </a>
-      </div>
-      <div class="grid-item">
-        <a data-fancybox='group' class='lightbox' href="/assets/wong_neil.jpg" data-fancybox data-caption="Caption for single image">
-          <img src="/assets/wong_neil.jpg" width='300' alt="" />
-        </a>
-      </div>
-    </div>
+    <ul id='projectUL' class='proj-list'>
+      <li>
+        <div id="hidden-content1" style='display:none;'>
+          <h1 id='hidden-title1' style="position: relative; top: 0; left:0; right:0; text-align:center">Miwak App</h1>
+          <div>
+            <table>
+              <tr>
+                <th> An Android app I built using Java and XML based on Udacity's Android Development course</th>
+              </tr>
+              <tr>
+                <td>Built using </td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+        <div class='proj-container'>
+          <a href='https://github.com/NeilWong/Miwak'> <h1> Miwak Language App</h1> </a>
+          <a data-fancybox data-src="#hidden-content1" href="javascript:;">
+          	<img src='assets/miwak_app_horizontal.jpg' alt='miwak app'>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div id="hidden-content2" style='display:none;'>
+          <h1 id='hidden-title2' style="position: relative; top: 0; left:0; right:0; text-align:center">Miwak App</h1>
+
+        </div>
+        <div class='proj-container'>
+          <a href='https://github.com/NeilWong/Miwak'> <h1> Miwak Language App</h1> </a>
+          <a data-fancybox data-src="#hidden-content2" href="javascript:;">
+          	<img src='assets/miwak_app_horizontal.jpg' alt='miwak app'>
+          </a>
+        </div>
+      <li>
+        <div id="hidden-content3" style='display:none;'>
+          <h1 id='hidden-title3' style="position: relative; top: 0; left:0; right:0; text-align:center">Miwak App</h1>
+
+        </div>
+        <div class='proj-container'>
+          <a href='https://github.com/NeilWong/Miwak'> <h1> Miwak Language App</h1> </a>
+          <a data-fancybox data-src="#hidden-content3" href="javascript:;">
+          	<img src='assets/miwak_app_horizontal.jpg' alt='miwak app'>
+          </a>
+        </div>
+      </li>
+    </ul>
   </section>
+
+
 
   <section id="contact">
     <div id="contactinfo">
@@ -102,7 +133,7 @@
         <p> Let's get in touch! </p>
       </div>
       <ul id="iconslist">
-          <li><a href="mailto:neil.wong75@gmail.com"><i class="fas fa-envelope-square"></i></a><p id="email">Email</p></li>
+          <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=neil.wong75@gmail.com"><i class="fas fa-envelope-square"></i></a><p id="email">Email</p></li>
           <li><a href="https://github.com/NeilWong"><i class="fab fa-github-square"></i></a><p id="github">Github</p></li>
           <li><a href="https://www.linkedin.com/in/neilkenwong/"><i class="fab fa-linkedin"></i></a><p id="linkedin">Linkedin</p></li>
           <li><a href="https://drive.google.com/file/d/1zubI_l5aTgN58h3iGu7clNFS-8llj3R3/view?usp=sharing"><i class="fas fa-file-alt"></i></a><p id="resume">Resume</p></li>
@@ -129,4 +160,33 @@
     <p id='caption'> I love solving problems, building strong relationships, and playing the guitar... </p>
     <p id='content'> Glad to see you here! My name is Neil Wong and I am a third year studying computer science at the University of California, Irvine. When i'm not coding away, I enjoy working out, catching up on tech blogs, delving into business and psych books, and like I mentioned above, honing up my guitar skills!</p>
   </div>
+-->
+<!--
+<div class="grid-container">
+  <div class="grid-item">
+    <a data-fancybox='group' class='lightbox' href="/assets/wong_neil.jpg" data-fancybox data-caption="Caption for single image">
+      <img src="/assets/wong_neil.jpg" width='300' alt="" />
+    </a>
+  </div>
+  <div class="grid-item">
+    <a data-fancybox='group' class='lightbox' href="/assets/wong_neil.jpg" data-fancybox data-caption="Caption for single image">
+      <img src="/assets/wong_neil.jpg" width='300' alt="" />
+    </a>
+  </div>
+  <div class="grid-item">
+    <a data-fancybox='group' class='lightbox' href="/assets/wong_neil.jpg" data-fancybox data-caption="Caption for single image">
+      <img src="/assets/wong_neil.jpg" width='300' alt="" />
+    </a>
+  </div>
+</div>
+-->
+<!--
+<div id='proj1_cont'>
+  <div id='proj1_image'>
+    <img src='assets/miwak_app2.PNG' alt='miwak app' width='250' height='100%'>
+  </div>
+  <div id='proj1_desc'>
+    <p>You are awesome1.</p>
+  </div>
+</div>
 -->

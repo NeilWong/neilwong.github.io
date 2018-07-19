@@ -74,6 +74,8 @@ $(document).ready(function(){
     });
 })(jQuery);
 
+
+
 /*
 $('.navbar-inverse').css('background-color', '#222538')
 $('.navbar-inverse').css('border-color', 'black')
