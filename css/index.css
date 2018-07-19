@@ -50,6 +50,7 @@ ul.nav a:hover {
 .table, td, th {
   border: 1px solid #ddd;
   text-align: left;
+  font-family: 'Open Sans','Signika', sans-serif;
 }
 table {
   border-collapse: collapse;
@@ -58,7 +59,13 @@ table {
 th, td {
   padding: 15px
 }
-tr:hover {background-color: #f5f5f5;}
+tr:hover {
+  background-color: #f5f5f5;
+}
+th {
+  background-color: #2C2F40;
+  color: white;
+}
 
 /* IDs */
 #home {
@@ -181,11 +188,19 @@ tr:hover {background-color: #f5f5f5;}
         text-align: center;
       }
       #projects #projectUL img {
+        padding-top: 25px;
         height: 300px;
-        width: 400px;
-        object-fit: scale-down;
+        width: 500px;
       }
-
+      #projects #projectUL img:hover {
+        webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+        filter: blur(4px);
+        transition: .35s -webkit-filter linear;
+      }
+        #projects #projectsUL #image1 {
+          height: 550px;
+          background: blue;
+        }
       #projects #projectUL li a {
         text-decoration: none;
       }
