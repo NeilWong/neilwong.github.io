@@ -67,6 +67,8 @@ th {
   color: white;
 }
 
+
+
 /* IDs */
 #home {
   height: 100vh;
@@ -172,36 +174,36 @@ th {
     #projects #projectTitle {
       font-size: 75px;
       padding-top: 75px;
+      padding-bottom: 75px;
       color: black;
       font-family: 'Open Sans','Signika', sans-serif;
     }
-    #projects #projectUL {
-      padding-top: 75px;
-      padding-right: 35px;
-      display: flex;
-      justify-content: space-around;
-      list-style-type: none;
-      width:100%;
-      overflow: hidden;
-    }
-      #projects #projectUL li{
-        text-align: center;
-      }
-      #projects #projectUL img {
-        padding-top: 25px;
+
+      #projects img {
+        padding: 25px;
+        text-align: center
+        max-width: 100%;
         height: 300px;
+        max-height: 300px;
         width: 500px;
+        max-width: 500px;
       }
-      #projects #projectUL img:hover {
+      #projects img:hover {
         webkit-filter: blur(4px); /* Chrome, Safari, Opera */
         filter: blur(4px);
         transition: .35s -webkit-filter linear;
       }
-        #projects #projectsUL #image1 {
-          height: 550px;
-          background: blue;
-        }
-      #projects #projectUL li a {
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        max-width: 100%;
+        overflow: auto;
+      }
+      .wrapper > div {
+        color: #d9480f;
+        text-align: center;
+      }
+      #projects  a {
         text-decoration: none;
       }
       #projects #projectUL a:hover {
