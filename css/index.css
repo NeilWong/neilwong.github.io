@@ -197,7 +197,8 @@ th {
         display: grid;
         grid-template-columns: repeat(3, auto);
         max-width: 100%;
-        overflow: auto;
+        overflow:auto;
+        width: 100vw;
       }
       .wrapper > div {
         color: #d9480f;
