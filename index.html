@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Neil Wong's Website</title>
   <!-- Required meta tags -->
@@ -23,14 +24,17 @@
   <script src="js/background.js"></script>
   <script type='text/javascript' src='js/jquery.particleground.js'></script>
   <link rel="stylesheet" href="css/animations.css">
-  <link rel = "stylesheet" type = "text/css" href = "css/index.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
   gtag('js', new Date());
 
   gtag('config', 'UA-122890069-1');
@@ -38,49 +42,49 @@
 
 <body>
   <div id="top">
-  <nav class="navbar navbar-inverse navbar-fixed-top" id='navbar'>
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#home">NEIL WONG</a>
+    <nav class="navbar navbar-inverse navbar-fixed-top" id='navbar'>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home">NEIL WONG</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right" id='navlist'>
+            <li><a href="#home" id="navhome">HOME</a></li>
+            <li><a href="#about" id="navabout">ABOUT</a></li>
+            <li><a href="#projects" id="navprojects">PROJECTS</a></li>
+            <li><a href="#contact" id="navcontact">CONTACT</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right" id='navlist'>
-          <li><a href="#home" id="navhome">HOME</a></li>
-          <li><a href="#about" id="navabout">ABOUT</a></li>
-          <li><a href="#projects" id="navprojects">PROJECTS</a></li>
-          <li><a href="#contact" id="navcontact">CONTACT</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
   </div>
 
   <section id="home">
     <div id="intro">
       <p id='hi' class='slideUp'>Hi,</p>
       <p id='welcome' class='slideUp'>Welcome to my website! </p>
-      <a href="#about" id="btn" class='fadeIn'><p>See More</p></a>
+      <a href="#about" id="btn" class='fadeIn'>
+        <p>See More</p>
+      </a>
     </div>
   </section>
 
-  <section id="about" class='container-fluid'>
+  <section id="about" class='about container-fluid'>
     <div class='aboutTitle'>
-      <p id='aboutTitle'> About </p>
+      <p class="about__title"> About </p>
     </div>
-      <div class="row">
-        <div class="col-sm-6" >
-          <img src='assets/profile.jpg' id='pic'>
-        </div>
-        <div class="col-sm-4" >
-          <p id='caption'>I love solving problems, building meaningful relationships, and playing the guitar... </p>
-          <p id='content'>Glad to see you here! My name is Neil Wong and I am a third year studying computer science at the University of California, Irvine. When i'm not coding away, I enjoy working out, catching up on tech blogs, delving into business and psych books, and like I mentioned above, honing up my guitar skills!</p>
-        </div>
-      </div>
+    <div class="about_container">
+      <img src='assets/profile.jpg' class='about__pic'>
+      <h3 class="about__caption">I love solving problems, building meaningful relationships, and playing the guitar... </h3>
+      <p class="about__content">Glad to see you here! My name is Neil Wong and I am a third year studying computer science at the University of California, Irvine. When i'm not coding away, I enjoy working out, catching up on tech blogs, delving into business and psych books,
+        and like I mentioned above, honing up my guitar skills!</p>
+
+    </div>
   </section>
 
   <section id='projects'>
@@ -101,15 +105,16 @@
                 <td>Developed using Android Studio, Java, and XML </td>
               </tr>
               <tr>
-                <td>Used on-click audio files to give proper pronunciation of words  </td>
+                <td>Used on-click audio files to give proper pronunciation of words </td>
               </tr>
             </table>
           </div>
         </div>
         <div class='proj-container'>
-          <a href='https://github.com/NeilWong/Miwak'> <h1> Miwak Language App</h1> </a>
+          <a href='https://github.com/NeilWong/Miwak'>
+            <h1> Miwak Language App</h1> </a>
           <a data-fancybox data-src="#hidden-content1" href="javascript:;">
-           <img id='image-1' src='assets/miwak.gif' alt='miwak app'>
+            <img id='image-1' src='assets/miwak.gif' alt='miwak app'>
           </a>
         </div>
       </div>
@@ -148,7 +153,8 @@
           </table>
         </div>
         <div class='proj-container'>
-          <!--<a href='https://github.com/NeilWong/Miwak'> --><h1> In Progress!</h1>
+          <!--<a href='https://github.com/NeilWong/Miwak'> -->
+          <h1> In Progress!</h1>
           <a data-fancybox data-src="#hidden-content3" href="javascript:;">
             <img id='image-3' src='assets/underconstruction1.png' alt='miwak app'>
           </a>
@@ -165,10 +171,18 @@
         <p> Let's get in touch! </p>
       </div>
       <ul id="iconslist">
-          <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=neil.wong75@gmail.com"><i class="fas fa-envelope-square"></i></a><p id="email">Email</p></li>
-          <li><a href="https://github.com/NeilWong"><i class="fab fa-github-square"></i></a><p id="github">Github</p></li>
-          <li><a href="https://www.linkedin.com/in/neilkenwong/"><i class="fab fa-linkedin"></i></a><p id="linkedin">Linkedin</p></li>
-          <li><a href="https://drive.google.com/file/d/1zubI_l5aTgN58h3iGu7clNFS-8llj3R3/view?usp=sharing"><i class="fas fa-file-alt"></i></a><p id="resume">Resume</p></li>
+        <li><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=neil.wong75@gmail.com"><i class="fas fa-envelope-square"></i></a>
+          <p id="email">Email</p>
+        </li>
+        <li><a href="https://github.com/NeilWong"><i class="fab fa-github-square"></i></a>
+          <p id="github">Github</p>
+        </li>
+        <li><a href="https://www.linkedin.com/in/neilkenwong/"><i class="fab fa-linkedin"></i></a>
+          <p id="linkedin">Linkedin</p>
+        </li>
+        <li><a href="https://drive.google.com/file/d/1zubI_l5aTgN58h3iGu7clNFS-8llj3R3/view?usp=sharing"><i class="fas fa-file-alt"></i></a>
+          <p id="resume">Resume</p>
+        </li>
       </ul>
     </div>
     <div id="copyrightContainer">
@@ -178,47 +192,5 @@
     </div>
   </section>
 </body>
+
 </html>
-
-<!--
-<p> About Me </p>
-  <img src='https://i.pinimg.com/originals/9c/58/c9/9c58c9e2c0abd7c5d33853b9ef725697.jpg' id='pic'>
-  <p id='caption'> I love solving problems, building strong relationships, and playing the guitar... </p>
-
-  <div class='col-sim-1'>
-    <img src='https://i.pinimg.com/originals/9c/58/c9/9c58c9e2c0abd7c5d33853b9ef725697.jpg' id='pic'>
-  </div>
-  <div class='col-sm-4' style='background-color:green;'>
-    <p id='caption'> I love solving problems, building strong relationships, and playing the guitar... </p>
-    <p id='content'> Glad to see you here! My name is Neil Wong and I am a third year studying computer science at the University of California, Irvine. When i'm not coding away, I enjoy working out, catching up on tech blogs, delving into business and psych books, and like I mentioned above, honing up my guitar skills!</p>
-  </div>
--->
-<!--
-<div class="grid-container">
-  <div class="grid-item">
-    <a data-fancybox='group' class='lightbox' href="/assets/wong_neil.jpg" data-fancybox data-caption="Caption for single image">
-      <img src="/assets/wong_neil.jpg" width='300' alt="" />
-    </a>
-  </div>
-  <div class="grid-item">
-    <a data-fancybox='group' class='lightbox' href="/assets/wong_neil.jpg" data-fancybox data-caption="Caption for single image">
-      <img src="/assets/wong_neil.jpg" width='300' alt="" />
-    </a>
-  </div>
-  <div class="grid-item">
-    <a data-fancybox='group' class='lightbox' href="/assets/wong_neil.jpg" data-fancybox data-caption="Caption for single image">
-      <img src="/assets/wong_neil.jpg" width='300' alt="" />
-    </a>
-  </div>
-</div>
--->
-<!--
-<div id='proj1_cont'>
-  <div id='proj1_image'>
-    <img src='assets/miwak_app2.PNG' alt='miwak app' width='250' height='100%'>
-  </div>
-  <div id='proj1_desc'>
-    <p>You are awesome1.</p>
-  </div>
-</div>
--->
