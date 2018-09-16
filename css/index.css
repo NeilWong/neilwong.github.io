@@ -1,6 +1,4 @@
-/* Default */
-
-/* Classes */
+/* Default*/
 .navbar-right {
   padding-left: 25px;
   padding-right: 25px;
@@ -72,63 +70,21 @@ th {
 /* IDs */
 
 /* Home Section */
-#home {
-  height: 100vh;
-  position: relative;
-  background-color: #2b3259;
-  text-align: center;
-  overflow: auto;
+.home {
+
+
 }
-  #intro {
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    top: 50%
+  .home__container {
+    background-image: url("../assets/cool-wallpaper.jpg");
+    background-size: cover;
+    max-height: 100vh;
+    min-height: 100vh;
   }
-  #intro #hi {
-    padding-top: 3em;
-    padding-bottom: 25px;
-    position: relative;
-    vertical-align: center;
-    font-size: 75px;
-    color: white;
-    text-align: center;
-    font-family: 'Open Sans','Signika', sans-serif;
+  #wallpaper {
+    max-height: 100vh;
+
   }
-  #intro #welcome {
-    position: relative;
-    vertical-align: center;
-    font-size: 75px;
-    color: white;
-    text-align: center;
-    padding-bottom: 35px;
-    font-family: 'Open Sans','Signika', sans-serif;
-  }
-  #btn {
-  display: inline-block;
-  padding: 5px 20px;
-  padding-top: 5px;
-  border: 2px solid #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.015em;
-  font-size: 32px;
-  font-weight: 600;
-  color: #fff;
-  text-decoration: none;
-  -webkit-transition: all 0.4s;
-     -moz-transition: all 0.4s;
-       -o-transition: all 0.4s;
-          transition: all 0.4s;
-          font-family: 'Open Sans','Signika', sans-serif;
-  }
-  #btn:hover {
-    color: #9d9d9d;
-    border-color: #9d9d9d;
-  }
-  #btn p {
-    padding-top: 10px;
-  }
+
 
 /* About Section */
 .about {
@@ -165,17 +121,19 @@ th {
 .about__caption {
   font-size: 33px;
   text-align: center;
-  min-width: 40%;
-  max-width: 40%;
+  min-width: 45%;
+  max-width: 45%;
   margin: 0 auto;
   padding-bottom: 35px;
 }
 
 .about__content {
   font-size: 23px;
-  text-align: center min-width: 40%;
-  max-width: 40%;
+  text-align: center
+  min-width: 45%;
+  max-width: 45%;
   margin: 0 auto;
+  margin-bottom: 35px;
 }
 
 /* Projects Section */
