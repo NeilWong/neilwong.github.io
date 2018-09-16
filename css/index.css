@@ -92,6 +92,13 @@ th {
   margin: 0 auto;
   margin-bottom: 35px;
 }
+
+.text {
+  position: relative;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .title {
   position: relative;
   font-size: 75px;
@@ -147,7 +154,7 @@ th {
   letter-spacing: 0.07em;
 }
 
-.portfolio-experiment a .text {
+.portfolio-experiment a .btn-text {
   transform: translate3d(0, 0.7em, 0);
   display: block;
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
@@ -208,7 +215,7 @@ th {
   transform-origin: right;
 }
 
-.portfolio-experiment a:hover .text, .portfolio-experiment a:active .text {
+.portfolio-experiment a:hover .btn-text, .portfolio-experiment a:active .btn-text {
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
@@ -248,43 +255,65 @@ th {
 /* About Section */
 .about {
   min-height: 100vh;
-  background-color: white;
+  background-color: none;
   font-family: 'Open Sans', sans-serif;
   overflow: auto;
 }
 
 .about__title-container {}
-.about__title {}
-
-.about__container {
-  width: 100vw;
-  height: 100vh;
-}
-
-.about__pic {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  height: 275px;
-  border-radius: 50%;
-}
-
-.about__caption {
-  font-size: 33px;
-  text-align: left;
-  min-width: 45%;
-  max-width: 45%;
-  margin: 0 auto;
-  padding-bottom: 35px;
-}
-
-.about__content {
-  font-size: 23px;
-  text-align: left;
-  min-width: 45%;
-  max-width: 45%;
-  margin: 0 auto;
+.about__title {
   margin-bottom: 35px;
+}
+
+.about__content-container {
+  text-align: center;
+  max-width: 55%;
+  min-height: 55vh;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.32), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+  border-radius: 1%;
+  word-wrap: break-word;
+}
+.about__content-1 {
+  float:left;
+  max-width: 50%;
+}
+.about__content-image {
+  min-height: 25vh;
+  max-height: 55vh;
+  width: auto\9; /* ie8 */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.32), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+  border-radius: 1%;
+}
+.about__content-2 {
+  float: right;
+  max-width: 50%;
+}
+.about__content-title {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  position: relative;
+  margin-top: 2%;
+  color: black;
+  text-transform: uppercase;
+}
+.about__content-name {
+  font-weight: bold;
+  padding-top: 25px;
+  font-size: 1em;
+  text-align: center;
+  position: relative;
+  color: black;
+  text-transform: uppercase;
+}
+.about__content-content {
+  padding-left: 10%;
+  max-width: 95%;
+  padding-top: 10px;
+  text-align: left;
+  position: relative;
 }
 
 
