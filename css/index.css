@@ -375,6 +375,7 @@ th {
 .contact__title {
 }
 .contact__title-content {
+  font-size: 3em;
   text-align: center;
   margin-top: 2em;
   margin-bottom: 0;
