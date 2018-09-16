@@ -141,6 +141,7 @@ th {
 
 .portfolio-experiment {
   text-align: center;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 .portfolio-experiment a {
@@ -272,19 +273,22 @@ th {
   margin: 0 auto;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.32), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
-  border-radius: 1%;
+  border-radius: 3%;
   word-wrap: break-word;
+  overflow: auto;
 }
 .about__content-1 {
   float:left;
   max-width: 50%;
 }
 .about__content-image {
+  margin: 15%;
+  margin-left: 50%;
   min-height: 25vh;
   max-height: 55vh;
   width: auto\9; /* ie8 */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.32), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
-  border-radius: 1%;
+  border-radius: 3%;
 }
 .about__content-2 {
   float: right;
@@ -309,13 +313,18 @@ th {
   text-transform: uppercase;
 }
 .about__content-content {
-  padding-left: 10%;
-  max-width: 95%;
+  padding-left: 15%;
+  max-width: 85%;
   padding-top: 10px;
   text-align: left;
   position: relative;
 }
-
+.about__button {
+  color: black !important;
+  font-family: 'Open Sans', sans-serif !important;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
 
 /* Projects Section */
 #projects {
