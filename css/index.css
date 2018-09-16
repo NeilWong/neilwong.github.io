@@ -400,9 +400,8 @@ th {
   min-height: 100vh;
   max-height: 100vh;
 }
-
 .contact {
-  padding-top: 7em;
+  padding-top: 1em;
   font-family: 'Open Sans', 'Signika', sans-serif;
   background: white;
   display: flex;
@@ -416,7 +415,7 @@ th {
 .contact__title-content {
   font-size: 3em;
   text-align: center;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 0;
 }
 
