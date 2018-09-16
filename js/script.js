@@ -74,7 +74,14 @@ $(document).ready(function(){
     });
 })(jQuery);
 
+/* About profile pic */
+$(function() {
+  $('.about__content-wrapper').click(function() {
+  	$('.content').toggleClass('open');
+  	$(this).toggleClass('open');
+  })
 
+})
 
 /*
 $('.navbar-inverse').css('background-color', '#222538')
