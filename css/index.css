@@ -1,5 +1,9 @@
 /* Default*/
+.navbar-brand {
+  font-family: 'Open Sans Bold', sans-serif;
+}
 .navbar-right {
+  font-family: 'Open Sans Bold', sans-serif;
   padding-left: 25px;
   padding-right: 25px;
   margin-left: 25px;
@@ -248,124 +252,226 @@ th {
   width: 100%;
   overflow: hidden;
 }
-    #projects #projectTitleContainer {
-      position: relative;
-      text-align: center;
-    }
-    #projects #projectTitle {
-      font-size: 75px;
-      padding-top: 75px;
-      padding-bottom: 75px;
-      color: black;
-      font-family: 'Open Sans','Signika', sans-serif;
-    }
 
-      #projects img {
-        padding: 25px;
-        text-align: center
-        max-width: 100%;
-        height: 300px;
-        max-height: 300px;
-        width: 500px;
-        max-width: 500px;
-      }
-      #projects img:hover {
-        webkit-filter: blur(4px); /* Chrome, Safari, Opera */
-        filter: blur(4px);
-        transition: .35s -webkit-filter linear;
-      }
-      .wrapper {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        max-width: 100%;
-        overflow:auto;
-        width: 100vw;
-      }
-      .wrapper > div {
-        color: #d9480f;
-        text-align: center;
-      }
-      #projects  a {
-        text-decoration: none;
-      }
-      #projects #projectUL a:hover {
-        color: gray;
-      }
-      #projects #hidden-content1 {
-        display: none;
-        width: 600px;
-        height: 400px;
-        position: relative;
-      }
-        #projects #hidden-content1 #hidden-title1 {
-          position: relative;
-          top: 0;
-          text-align: center;
-        }
-
-/* Contacts Section */
-#contact {
+#projects #projectTitleContainer {
   position: relative;
-  height: auto;
-  min-height: 100vh;
-  background-color: #2C2F40;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  text-align: center;
 }
-  #contact #contactinfo {
-    padding-top: 15em;
-    background-color: #2C2F40;
-    text-align: center;
-    display: table-column;
+
+#projects #projectTitle {
+  font-size: 75px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  color: black;
+  font-family: 'Open Sans', 'Signika', sans-serif;
+}
+
+#projects img {
+  padding: 25px;
+  text-align: center max-width: 100%;
+  height: 300px;
+  max-height: 300px;
+  width: 500px;
+  max-width: 500px;
+}
+
+#projects img:hover {
+  webkit-filter: blur(4px);
+  /* Chrome, Safari, Opera */
+  filter: blur(4px);
+  transition: .35s -webkit-filter linear;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  max-width: 100%;
+  overflow: auto;
+  width: 100vw;
+}
+
+.wrapper>div {
+  color: #d9480f;
+  text-align: center;
+}
+
+#projects a {
+  text-decoration: none;
+}
+
+#projects #projectUL a:hover {
+  color: gray;
+}
+
+#projects #hidden-content1 {
+  display: none;
+  width: 600px;
+  height: 400px;
+  position: relative;
+}
+
+#projects #hidden-content1 #hidden-title1 {
+  position: relative;
+  top: 0;
+  text-align: center;
+}
+
+.contact {
+    font-family: 'Open Sans', 'Signika', sans-serif;
+    background: white;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
   }
-    #contact #contactinfo #contactme p {
-      text-align: center;
-      color: white;
-      font-size: 60px;
-    }
-  #contact #contactinfo #iconslist {
-    display: inline;
+
+  .contact .container {
     text-align: center;
-    margin-right: 10.5em;
+    max-width: 850px;
   }
-    #contact #contactinfo #iconslist li {
-      display: inline-block;
-      position: relative;
-      overflow: hidden;
-    }
-    #contact #contactinfo #iconslist li p {
-      display: inline-block;
-      font-size: 2em;
-      color: white;
-      padding-left: 45px;
-      overflow: auto;
-      margin-left: 3.95em;
-    }
-    #contact #contactinfo #iconslist a {
-      text-decoration: none;
-      display: block;
-      color: white;
-      font-size: 7.5em;
-      margin-left: 1.5em;
-      margin-top: 1em;
-    }
-    #contact #contactinfo #iconslist a:hover {
-      color: darkgrey;
-    }
-  #copyrightContainer {
+
+  .contact-container {
+    position: relative;
+    display: inline-block;
+    width: 325px;
+    height: 36px;
+    perspective: 300px;
+    font-size: 24px;
+    margin: 8px;
+  }
+
+  .contact-container .contact-cube {
     position: absolute;
-    bottom: 0;
-    text-align: center;
-    background-color: #222538;
+    left: 0;
+    top: 0;
     width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.333s;
+    transform: translateZ(-18px);
   }
-    #copyright {
-      padding-top: 10px;
-    }
-    #copyrightContainer #number {
-      padding-bottom: 5px;
-    }
+
+  .contact-container .contact-cube .front, .contact-container .contact-cube .bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: background 0.333s;
+  }
+
+  .contact-container .contact-cube .front {
+    transform: rotateX(0deg) translateZ(18px);
+  }
+
+  .contact-container .contact-cube .bottom {
+    transform: rotateX(-90deg) translateZ(18px);
+  }
+
+  .contact-container:hover .contact-cube {
+    transform: translateZ(-18px) rotateX(90deg);
+  }
+
+  .contact-container.twitter .contact-cube .front, .contact-container.twitter .contact-cube .back {
+    background: #4099ff;
+  }
+
+  .contact-container.twitter .contact-cube .bottom {
+    background: #0d7eff;
+  }
+
+  .contact-container.twitter:hover .contact-cube .bottom {
+    background: #4099ff;
+  }
+
+  .contact-container.twitter:hover .contact-cube .front {
+    background: #73b4ff;
+  }
+
+  .contact-container.github .contact-cube .front, .contact-container.github .contact-cube .back {
+    background: #2C2F40;
+  }
+
+  .contact-container.github .contact-cube .bottom {
+    background: #2d4373;
+  }
+
+  .contact-container.github:hover .contact-cube .bottom {
+    background: #2C2F40;
+  }
+
+  .contact-container.github:hover .contact-cube .front {
+    background: #4c70ba;
+  }
+
+  .contact-container.linkedin .contact-cube .front, .contact-container.linkedin .contact-cube .back {
+    background: #cc181e;
+  }
+
+  .contact-container.linkedin .contact-cube .bottom {
+    background: #9e1317;
+  }
+
+  .contact-container.linkedin:hover .contact-cube .bottom {
+    background: #cc181e;
+  }
+
+  .contact-container.linkedin:hover .contact-cube .front {
+    background: #e73036;
+  }
+
+  .contact-container.resume .contact-cube .front, .contact-container.resume .contact-cube .back {
+    background: #767676;
+  }
+
+  .contact-container.resume .contact-cube .bottom {
+    background: #5d5d5d;
+  }
+
+  .contact-container.resume:hover .contact-cube .bottom {
+    background: #767676;
+  }
+
+  .contact-container.resume:hover .contact-cube .front {
+    background: #909090;
+  }
+
+  .contact-container.phone .contact-cube .front, .contact-container.phone .contact-cube .back {
+    background: black;
+  }
+
+  .contact-container.phone .contact-cube .bottom {
+    background: #e51e6b;
+  }
+
+  .contact-container.phone:hover .contact-cube .bottom {
+    background: black;
+  }
+
+  .contact-container.phone:hover .contact-cube .front {
+    background: #ef7aa7;
+  }
+
+  .contact-container.codepen .contact-cube .front, .contact-container.codepen .contact-cube .back {
+    background: #191919;
+  }
+
+  .contact-container.codepen .contact-cube .bottom {
+    background: #000;
+  }
+
+  .contact-container.codepen:hover .contact-cube .bottom {
+    background: #191919;
+  }
+
+  .contact-container.codepen:hover .contact-cube .front {
+    background: #333;
+  }
 
     /*
     */
@@ -435,3 +541,69 @@ th {
   background-color: red;
 }
 */
+
+/* Contact
+
+#contact {
+  position: relative;
+  height: auto;
+  min-height: 100vh;
+  background-color: #2C2F40;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+  #contact #contactinfo {
+    padding-top: 15em;
+    background-color: #2C2F40;
+    text-align: center;
+    display: table-column;
+  }
+    #contact #contactinfo #contactme p {
+      text-align: center;
+      color: white;
+      font-size: 60px;
+    }
+  #contact #contactinfo #iconslist {
+    display: inline;
+    text-align: center;
+    margin-right: 10.5em;
+  }
+    #contact #contactinfo #iconslist li {
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+    }
+    #contact #contactinfo #iconslist li p {
+      display: inline-block;
+      font-size: 2em;
+      color: white;
+      padding-left: 45px;
+      overflow: auto;
+      margin-left: 3.95em;
+    }
+    #contact #contactinfo #iconslist a {
+      text-decoration: none;
+      display: block;
+      color: white;
+      font-size: 7.5em;
+      margin-left: 1.5em;
+      margin-top: 1em;
+    }
+    #contact #contactinfo #iconslist a:hover {
+      color: darkgrey;
+    }
+  #copyrightContainer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: #222538;
+    width: 100%;
+  }
+    #copyright {
+      padding-top: 10px;
+    }
+    #copyrightContainer #number {
+      padding-bottom: 5px;
+    }
+    */
