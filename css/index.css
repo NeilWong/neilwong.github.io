@@ -92,6 +92,13 @@ th {
   margin: 0 auto;
   margin-bottom: 35px;
 }
+
+.text {
+  position: relative;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .title {
   position: relative;
   font-size: 75px;
@@ -134,6 +141,7 @@ th {
 
 .portfolio-experiment {
   text-align: center;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 .portfolio-experiment a {
@@ -147,7 +155,7 @@ th {
   letter-spacing: 0.07em;
 }
 
-.portfolio-experiment a .text {
+.portfolio-experiment a .btn-text {
   transform: translate3d(0, 0.7em, 0);
   display: block;
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
@@ -208,7 +216,7 @@ th {
   transform-origin: right;
 }
 
-.portfolio-experiment a:hover .text, .portfolio-experiment a:active .text {
+.portfolio-experiment a:hover .btn-text, .portfolio-experiment a:active .btn-text {
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
@@ -248,43 +256,74 @@ th {
 /* About Section */
 .about {
   min-height: 100vh;
-  background-color: white;
+  background-color: none;
   font-family: 'Open Sans', sans-serif;
   overflow: auto;
 }
 
+.about__title-container {}
 .about__title {
-}
-
-.about__container {
-  width: 100vw;
-  height: 100vh;
-}
-
-.about__pic {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  height: 275px;
-  border-radius: 50%;
-}
-
-.about__caption {
-  font-size: 33px;
-  text-align: left;
-  min-width: 45%;
-  max-width: 45%;
-  margin: 0 auto;
-  padding-bottom: 35px;
-}
-
-.about__content {
-  font-size: 23px;
-  text-align: left;
-  min-width: 45%;
-  max-width: 45%;
-  margin: 0 auto;
   margin-bottom: 35px;
+}
+
+.about__content-container {
+  text-align: center;
+  max-width: 55%;
+  min-height: 55vh;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.32), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+  border-radius: 3%;
+  word-wrap: break-word;
+  overflow: auto;
+}
+.about__content-1 {
+  float:left;
+  max-width: 50%;
+}
+.about__content-image {
+  margin: 15%;
+  margin-left: 50%;
+  min-height: 25vh;
+  max-height: 55vh;
+  width: auto\9; /* ie8 */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.32), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+  border-radius: 3%;
+}
+.about__content-2 {
+  float: right;
+  max-width: 50%;
+}
+.about__content-title {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  position: relative;
+  margin-top: 2%;
+  color: black;
+  text-transform: uppercase;
+}
+.about__content-name {
+  font-weight: bold;
+  padding-top: 25px;
+  font-size: 1em;
+  text-align: center;
+  position: relative;
+  color: black;
+  text-transform: uppercase;
+}
+.about__content-content {
+  padding-left: 15%;
+  max-width: 85%;
+  padding-top: 10px;
+  text-align: left;
+  position: relative;
+}
+.about__button {
+  color: black !important;
+  font-family: 'Open Sans', sans-serif !important;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 /* Projects Section */
@@ -375,6 +414,7 @@ th {
 .contact__title {
 }
 .contact__title-content {
+  font-size: 3em;
   text-align: center;
   margin-top: 2em;
   margin-bottom: 0;
@@ -657,5 +697,50 @@ th {
     }
     #copyrightContainer #number {
       padding-bottom: 5px;
+    }
+    */
+
+    /*  interactive about
+    .about__content-wrapper {
+      margin-top: 3%;
+      width: 250px;
+      height: 250px;
+      cursor: pointer;
+      left: 43%;
+      position: relative;
+      border-radius: 3px;
+      overflow: hidden;
+      transform: translate();
+      transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+      transition: transform 375ms, width 275ms 100ms, height 375ms;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    .about__content-wrapper.open {
+      transform: translate(-50px, -50px);
+      width: 350px;
+      height: 350px;
+      transition: transform 375ms, width 375ms, height 275ms 100ms;
+    }
+    .about__content-img {
+      height: 250px;
+      background-image: url("../assets/profile.jpg");
+      background-size: cover;
+      background-position: center;
+
+    }
+    .about__content-text {
+      padding: 30px;
+    }
+    .about__content-text .about__content-title {
+      width: 80%;
+      height: 13px;
+      margin-top: 20px;
+    }
+
+    .about__content-text .about__content-subtitle {
+      height: 13px;
+      background: #eee;
+      margin-top: 20px;
+      width: 60%;
     }
     */
