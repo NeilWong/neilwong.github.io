@@ -125,8 +125,8 @@ $(document).ready(function(){
     $(document).ready(function(){
         $(window).scroll(function(){
             if ($(this).scrollTop() > 100) {
-                $('.navbar-inverse').css('background-color', '#222538')
-                $('.navbar-inverse').css('border-color', 'black')
+                $('.navbar-inverse').css('background-color', 'red') //'#222538')
+                $('.navbar-inverse').css('border-color', "none")
                 $('.navbar-inverse').transition('background-color 3s')
                 $('.navbar-inverse').fadeIn(500);
             } else {

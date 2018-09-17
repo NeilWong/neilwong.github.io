@@ -1,12 +1,17 @@
-color {
+:root {
   --main-button-color: red;
 }
 /* Disclaimer, button animations were made by  Luke Meyrick */
 /* Slider designed by Muhammed Erdem*/
-/* Default*/.navbar-brand {
-  font-family: 'Open Sans Bold', sans-serif;
+/* Default*/
+#logo {
+  color: white;
 }
-
+.navbar-brand {
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
 .navbar-right {
   font-family: 'Open Sans Bold', sans-serif;
   padding-left: 25px;
@@ -19,8 +24,8 @@ color {
 }
 
 .navbar-inverse {
-  background: rgba(44, 47, 64, 0);
-  border-color: transparent;
+  /*background: rgba(44, 47, 64, 0);*/
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.32), 0 3px 10px 0 rgba(0, 0, 0, 0.39);
    !important
 }
 
@@ -29,63 +34,19 @@ color {
   font-family: 'Open Sans', 'Signika', sans-serif;
    !important text-transform: uppercase;
 }
-
-ul {
-  list-style-type: none;
-}
-
-ul.nav a:hover {
+ul.nav a {
   color: white !important;
 }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 500px;
-  background-color: #2196F3;
-  padding: 10px;
+ul.nav a:hover {
+  border-bottom: 2px solid white;
+  color: white !important;
 }
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  margin: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.col-sm-6 {
-  text-align: center;
-  float: center;
-}
-
-.col-sm-4 {
-  text-align: center;
-  float: center;
-}
-
-.table, td, th {
-  border: 1px solid #ddd;
-  text-align: left;
-  font-family: 'Open Sans', 'Signika', sans-serif;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th, td {
-  padding: 15px
-}
-
-tr:hover {
-  background-color: #f5f5f5;
-}
-
-th {
-  background-color: #2C2F40;
-  color: white;
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: none !important;
+  background: none !important;
+  border-bottom: 2px solid white;
 }
 
 /* General */
@@ -247,7 +208,7 @@ th {
   width:30vw;
   height:35vh;
   margin:10px;
-  background-color:red;
+  background-color:var(--main-button-color);
   display:inline-block;
   background-size:cover;
   position:relative;
@@ -450,107 +411,107 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 
 .contact-container.twitter .contact-cube .front, .contact-container.twitter .contact-cube .back {
   background: #4099ff;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.twitter .contact-cube .bottom {
   background: #0d7eff;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.twitter:hover .contact-cube .bottom {
   background: #4099ff;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.twitter:hover .contact-cube .front {
   background: #73b4ff;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.github .contact-cube .front, .contact-container.github .contact-cube .back {
   /*background: #2C2F40;*/
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.github .contact-cube .bottom {
   background: #2d4373;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.github:hover .contact-cube .bottom {
   background: #2C2F40;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.github:hover .contact-cube .front {
   background: #4c70ba;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.linkedin .contact-cube .front, .contact-container.linkedin .contact-cube .back {
   background: #cc181e;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.linkedin .contact-cube .bottom {
   background: #9e1317;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.linkedin:hover .contact-cube .bottom {
   background: #cc181e;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.linkedin:hover .contact-cube .front {
   background: #e73036;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.resume .contact-cube .front, .contact-container.resume .contact-cube .back {
   background: #767676;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.resume .contact-cube .bottom {
   background: #5d5d5d;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.resume:hover .contact-cube .bottom {
   background: #767676;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.resume:hover .contact-cube .front {
   background: #909090;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.phone .contact-cube .front, .contact-container.phone .contact-cube .back {
   background: black;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.phone .contact-cube .bottom {
   background: #e51e6b;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.phone:hover .contact-cube .bottom {
   background: black;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.phone:hover .contact-cube .front {
   background: #ef7aa7;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.codepen .contact-cube .front, .contact-container.codepen .contact-cube .back {
   background: #191919;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .contact-container.codepen .contact-cube .bottom {
@@ -595,15 +556,15 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   left: calc(0.7em * 1.2);
   right: calc(0.7em * 1.2);
   height: 3px;
-  background: red;
-  color: red!important;
+  background: var(--main-button-color);
+  color: var(--main-button-color)!important;
   transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
   transform-origin: left;
 }
 
 .portfolio-experiment .line {
   position: absolute;
-  background: red;
+  background: var(--main-button-color);
 }
 
 .portfolio-experiment .line.-right, .portfolio-experiment .line.-left {
