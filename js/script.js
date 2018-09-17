@@ -95,7 +95,20 @@ $(document).ready(function(){
     });
 })(jQuery);
 
-
+/* Code for Projects Slider*/
+var swiper = new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      // autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
 /*
 $('.navbar-inverse').css('background-color', '#222538')
 $('.navbar-inverse').css('border-color', 'black')
