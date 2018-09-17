@@ -103,7 +103,7 @@ th {
   position: relative;
   font-size: 75px;
   padding-top: .75em;
-  padding-bottom: .5em;
+  padding-bottom: .4em;
   text-align: center;
   color: black;
   font-family: 'Open Sans', sans-serif;
@@ -264,7 +264,6 @@ th {
 
 .about__title-container {}
 .about__title {
-  margin-bottom: 35px;
 }
 
 .about__content-container {
@@ -308,12 +307,6 @@ th {
 .about__content-title {
   max-width: 95%;
   font-weight: bold;
-<<<<<<< HEAD
-  padding-top: 12%;
-||||||| merged common ancestors
-  padding-top: 25px;
-=======
->>>>>>> experiments
   font-size: 1em;
   text-align: center;
   position: relative;
