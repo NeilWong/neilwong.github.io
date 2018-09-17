@@ -1,3 +1,5 @@
+/* Disclaimer, button animations were made by  Luke Meyrick */
+/* Slider designed by Muhammed Erdem*/
 /* Default*/
 .navbar-brand {
   font-family: 'Open Sans Bold', sans-serif;
@@ -283,7 +285,7 @@ th {
 }
 .about__content-image {
   margin: 15%;
-  margin-left: 50%;
+  margin-left: 40%;
   min-height: 25vh;
   max-height: 55vh;
   width: auto\9; /* ie8 */
@@ -323,15 +325,7 @@ th {
 .about__button {
   color: black !important;
   font-family: 'Open Sans', sans-serif !important;
-<<<<<<< HEAD
-  margin-top: 3%;
-||||||| merged common ancestors
-  margin-top: 10%;
-  margin-bottom: 5%;
-=======
-  margin-top: 2.5%;
   margin-bottom: 15px;
->>>>>>> experiments
 }
 
 /* Projects Section */
