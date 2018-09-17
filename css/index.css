@@ -256,6 +256,7 @@ th {
 /* About Section */
 .about {
   min-height: 100vh;
+  height: auto;
   background-color: none;
   font-family: 'Open Sans', sans-serif;
   overflow: auto;
@@ -294,8 +295,25 @@ th {
   float: right;
   max-width: 50%;
 }
-.about__content-title {
+.about__content-name {
+  max-width: 95%;
   font-weight: bold;
+  padding-top: 25px;
+  font-size: 1em;
+  text-align: center;
+  position: relative;
+  color: black;
+  text-transform: uppercase;
+}
+.about__content-title {
+  max-width: 95%;
+  font-weight: bold;
+<<<<<<< HEAD
+  padding-top: 12%;
+||||||| merged common ancestors
+  padding-top: 25px;
+=======
+>>>>>>> experiments
   font-size: 1em;
   text-align: center;
   position: relative;
@@ -303,18 +321,8 @@ th {
   color: black;
   text-transform: uppercase;
 }
-.about__content-name {
-  font-weight: bold;
-  padding-top: 12%;
-  font-size: 1em;
-  text-align: center;
-  position: relative;
-  color: black;
-  text-transform: uppercase;
-}
 .about__content-content {
-  padding-left: 15%;
-  max-width: 85%;
+  max-width: 95%;
   padding-top: 10px;
   text-align: left;
   position: relative;
@@ -322,7 +330,15 @@ th {
 .about__button {
   color: black !important;
   font-family: 'Open Sans', sans-serif !important;
+<<<<<<< HEAD
   margin-top: 3%;
+||||||| merged common ancestors
+  margin-top: 10%;
+  margin-bottom: 5%;
+=======
+  margin-top: 2.5%;
+  margin-bottom: 15px;
+>>>>>>> experiments
 }
 
 /* Projects Section */
