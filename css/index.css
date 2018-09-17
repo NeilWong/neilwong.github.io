@@ -141,6 +141,9 @@ th {
   text-align: center;
 }
 
+.home__button {
+}
+
 .portfolio-experiment {
   text-align: center;
   font-family: 'Open Sans', sans-serif !important;
@@ -154,7 +157,7 @@ th {
   position: relative;
   font-size: 2.0em;
   cursor: pointer;
-  letter-spacing: 0.07em;
+  /*letter-spacing: 0.07em;*/
 }
 
 .portfolio-experiment a .btn-text {
@@ -272,6 +275,7 @@ th {
   text-align: center;
   max-width: 55%;
   min-height: 55vh;
+  max-height: 45vh;
   margin: 0 auto;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.32), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
@@ -286,7 +290,7 @@ th {
   margin: 15%;
   margin-left: 40%;
   min-height: 25vh;
-  max-height: 55vh;
+  max-height: 45vh;
   width: auto\9; /* ie8 */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.32), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
 }
