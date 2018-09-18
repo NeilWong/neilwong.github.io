@@ -26,7 +26,7 @@
 .navbar-inverse {
   /*background: rgba(44, 47, 64, 0);*/
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.32), 0 3px 10px 0 rgba(0, 0, 0, 0.39);
-   !important
+   background-color: none !important;   
 }
 
 .navbar-inverse .navbar-nav>li>a {
