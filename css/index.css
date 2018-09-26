@@ -1,5 +1,9 @@
 :root {
-  --main-button-color: red;
+  --main-button-color: #003366;
+  --main-slider-color: #003366;
+  --navbar-color: #003366;
+  --contact-color: #003366;
+  /* var(--main-button-color) to use var*/
 }
 /* Disclaimer, button animations were made by  Luke Meyrick */
 /* Slider designed by Muhammed Erdem*/
@@ -8,6 +12,7 @@
   color: white;
 }
 .navbar-brand {
+  /*For the logo "NW"*/
   font-family: 'Open Sans Bold', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
@@ -24,9 +29,9 @@
 }
 
 .navbar-inverse {
-  /*background: rgba(44, 47, 64, 0);*/
+  background: rgba(44, 47, 64, 0);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.32), 0 3px 10px 0 rgba(0, 0, 0, 0.39);
-   background-color: none !important;
+  background-color:  var(--main-button-color) !important;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -890,7 +895,7 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 }
 .blog-slider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #fd3838;
+  background: var(--main-button-color);/*#fd3838;*/
   height: 30px;
   box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
 }
