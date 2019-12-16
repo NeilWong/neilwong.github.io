@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Neil Wong's Website</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Other addons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <!--<script type='text/javascript' src='js/jquery.particleground.js'></script>-->
+  <!-- FancyBox CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+  <!-- Bootstrap CSS (for nav bar)-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- CSS for project swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" type="text/css">
+  <!-- CSS files from local folders -->
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-122890069-1');
+</script>
+
+<body>
+  <div id="top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id='navbar'>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="logo" class="navbar-brand" href="#home">NW</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right" id='navlist'>
+            <li><a href="#home" id="navhome">Home</a></li>
+            <li><a href="#about" id="navabout">About</a></li>
+            <li><a href="#projects" id="navprojects">Projects</a></li>
+            <li><a href="#contact" id="navcontact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <section id="home">
+    <div class="home__container">
+      <p class="home__container__first-name home__container--decoration fadeIn">Neil</p>
+      <p class="home__container__last-name home__container--decoration fadeIn">Wong</p>
+      <section class="portfolio-experiment fadeIn">
+        <a href="#about">
+          <span class="btn-text home__button">More Info</span>
+          <span class="line -right"></span>
+          <span class="line -top"></span>
+          <span class="line -left"></span>
+          <span class="line -bottom"></span>
+        </a>
+      </section>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class='about__title-container'>
+      <p class="about__title title"> About </p>
+    </div>
+    <div class="about__content-container">
+      <div class="about__content-1">
+        <img class="about__content-image" src='assets/profile-fullres-square.jpg' class='about__pic'>
+    </div>
+        <div class="about__content-2">
+          <p class="about__content-name">
+            Neil Wong
+          </p>
+          <p class="about__content-title">
+            Software Engineer x Android Developer
+          </p>
+          <p class="about__content-content">
+            I love building effective and efficient solutions to problems, building meaningful relationships and projects, and playing the guitar...
+            <br></br>
+            Glad to see you here! My name is Neil Wong and I am a third year studying computer science at the University of California, Irvine. When i'm not coding away, I enjoy working out, catching up on tech blogs, delving
+            into business and psych books,
+            and like I mentioned above, honing up my guitar skills!
+            <p>
+        </div>
+      </div>
+  </section>
+
+  <section id='projects'>
+    <div class="projects__title-container">
+      <p class='projects__title title'> Projects </p>
+    </div>
+    <div class="blog-slider">
+      <div class="blog-slider__wrp swiper-wrapper">
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+
+            <img src="/assets/particle-screenshot.JPG" alt="">
+        </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">September 2017</span>
+              <div class="blog-slider__title">Particle Field</div>
+              <div class="blog-slider__text">Particle field design created for a class final project. Built using a basic GUI and Python to simulate particle animations and frame by frame interactions of each particle </div>
+              <!--<a href="#" class="blog-slider__button">READ MORE</a>-->
+            </div>
+          </div>
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="/assets/miwak-screenshot.jpg" alt="">
+        </div>
+              <div class="blog-slider__content">
+                <span class="blog-slider__code">December 2017</span>
+                <div class="blog-slider__title">Miwak Language App</div>
+                <div class="blog-slider__text">Uses fragments to navigate between screens and utilizes audio files of translations. Built using Java and XML. Made as part of the Udacity Android Course*</div>
+                <!--<a href="#" class="blog-slider__button">READ MORE</a>-->
+              </div>
+            </div>
+
+            <div class="blog-slider__item swiper-slide">
+              <div class="blog-slider__img">
+                <img src="/assets/pet-screenshot.jpg" alt="">
+        </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">August 2018</span>
+                  <div class="blog-slider__title">Pet Tracker</div>
+                  <div class="blog-slider__text">Built using Java and XML to store and save data from user input into SQLite databases. Built as part of the Udacity Android Course*</div>
+                  <!--<a href="#" class="blog-slider__button">READ MORE</a>-->
+                </div>
+              </div>
+
+            </div>
+            <div class="blog-slider__pagination"></div>
+          </div>
+
+
+  </section>
+
+  <section id="contact">
+    <div class="contact__title">
+      <p class="contact__title-text title">Contact </p>
+      <p class="contact__title-content content">Let's get in touch!</p>
+    </div>
+    <div class="contact">
+      <div class="container">
+        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=neil.wong75@gmail.com" class="contact-container twitter">
+        <div class="contact-cube">
+          <div class="front">
+            Email
+          </div>
+          <div class="bottom">
+            neil.wong75@gmail.com
+          </div>
+        </div>
+      </a>
+        <a href="https://github.com/NeilWong" class="contact-container github">
+        <div class="contact-cube">
+          <div class="front">
+            Github
+          </div>
+          <div class="bottom">
+            @NeilWong
+          </div>
+        </div>
+      </a>
+        <a href="https://www.linkedin.com/in/neilkenwong/" class="contact-container linkedin">
+        <div class="contact-cube">
+          <div class="front">
+            LinkedIn
+          </div>
+          <div class="bottom">
+            @neilkenwong
+          </div>
+        </div>
+      </a>
+        <a href="https://drive.google.com/file/d/1BV17oFx_adBNQmg5_hUtclw2JaYR0hny/view?usp=sharing" class="contact-container resume">
+        <div class="contact-cube">
+          <div class="front">
+            Resume
+          </div>
+          <div class="bottom">
+            Click Here!
+          </div>
+        </div>
+      </a>
+        <a  class="contact-container phone">
+        <div class="contact-cube">
+          <div class="front">
+            Phone
+          </div>
+          <div class="bottom">
+            (415)-602-1780
+          </div>
+        </div>
+      </a>
+      </div>
+    </div>
+    <section class="portfolio-experiment fadeIn">
+      <a href="#home" class="contact__button">
+      <span class="btn-text">Home</span>
+      <span class="line -right"></span>
+      <span class="line -top"></span>
+      <span class="line -left"></span>
+      <span class="line -bottom"></span>
+    </a>
+    </section>
+
+  </section>
+
+</body>
+<script src="js/script.js"></script>
+<script src="js/background.js"></script>
+
+</html>
+
+<!-- Alternative project displayer -->
+<!--
+<div class="wrap">
+
+  <div class="tile">
+    <img src='/assets/simulator.gif'/>
+    <div class="text">
+      <h1>Particle Field</h1>
+      <h2 class="animate-text"></h2>
+      <p class="animate-text">Particle field design created for a class final project. Built using a basic GUI and Python to simulate particle animations and interactions</p>
+      <div class="dots">
+
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tile">
+    <img src='/assets/miwak.gif'/>
+    <div class="text">
+      <h1>Miwak Lang. App</h1>
+      <h2 class="animate-text">Android app built from Udacity course</h2>
+      <p class="animate-text">Uses fragments to navigate between screens and utilizes audio files of translations. Built as part of the Udacity Android Course*</p>
+      <div class="dots">
+
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tile">
+    <img src='/assets/pet-resize.gif'/>
+    <div class="text">
+      <h1>Pet Tracker</h1>
+      <h2 class="animate-text">Built as part of Udacity Android Lessons</h2>
+      <p class="animate-text">Built using Java and XML to store and save data from user input into SQLite databases. Built as part of the Udacity Android Course*</p>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</div>
+-->
