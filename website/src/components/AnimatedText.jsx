@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react"
+import PropTypes from "prop-types"
 
 import anime from "animejs/lib/anime.es.js"
 
-import { ml12 } from "./animated-text.module.scss"
+import { ml9 } from "./animated-text.module.scss"
 
 function AnimatedText({ text }) {
   let textRef = useRef(null)
@@ -39,11 +40,15 @@ function AnimatedText({ text }) {
 
   return (
     <>
-      <h1 ref={textRef} className={ml12}>
+      <h1 ref={textRef} className={ml9}>
         {text}
       </h1>
     </>
   )
+}
+
+AnimatedText.propTypes = {
+  text: PropTypes.string.isRequired,
 }
 
 export default AnimatedText

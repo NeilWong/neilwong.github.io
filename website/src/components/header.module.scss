@@ -1,0 +1,39 @@
+.header {
+  background: white;
+  margin-bottom: 1.45 rem;
+
+  .h1 {
+    margin: 0;
+  }
+
+  .link {
+    color: black;
+    text-decoration: None;
+  }
+}
+
+.structure {
+  margin: 0 auto;
+  max-width: 100%; //960 default,
+  padding: 1.45rem 1.0875rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  .left {
+    order: 1;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    order: 2;
+    flex-basis: 40%;
+  }
+
+  .right {
+    order: 3;
+  }
+}
