@@ -24,10 +24,10 @@ function About({ name, title, nouns }) {
           <>from San Francisco</>
         </div>
         {/* <hr className={styles.hr} /> */}
-        <p style={{ position: "fixed", top: "815px" }}>Projects</p>
+        <p style={{ position: "absolute", top: "815px" }}>Projects</p>
         <Icon
           type="down"
-          style={{ position: "fixed", fontSize: "48px", top: "850px" }}
+          style={{ position: "absolute", fontSize: "48px", top: "850px" }}
         />
       </div>
     </div>

@@ -1,9 +1,9 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-import styles from "./Header.module.scss"
+import styles from "./Navbar.module.scss"
 
-const Header = ({ siteTitle }) => (
+const Navbar = ({ siteTitle }) => (
   <header className={styles.header}>
     <div className={styles.structure}>
       <a href="#" className={styles.logo}>
@@ -18,12 +18,12 @@ const Header = ({ siteTitle }) => (
   </header>
 )
 
-Header.propTypes = {
+Navbar.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+Navbar.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Navbar
