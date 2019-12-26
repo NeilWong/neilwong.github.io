@@ -1,5 +1,7 @@
 import React from "react"
 
+import AnimatedText from "./AnimatedText"
+
 import PropTypes from "prop-types"
 
 import styles from "./about-me.module.scss"
@@ -15,7 +17,13 @@ function AboutMe({ name, title, content, nouns }) {
           </p>
         </div>
         <div className={styles.secondary}>
-          <p>{content}</p>
+          <p>
+            I'm a{" "}
+            <strong>
+              <AnimatedText items={["developer", "problem solver"]} />
+            </strong>{" "}
+            from San Francisco
+          </p>
         </div>
       </div>
     </div>
