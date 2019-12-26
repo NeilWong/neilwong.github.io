@@ -1,19 +1,11 @@
-import React, { useEffect, useRef } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import TextLoop from "react-text-loop"
 
-import anime from "animejs/lib/anime.es.js"
-
-import { ml9 } from "./animated-text.module.scss"
-
 function AnimatedText({ items }) {
-  const itemsList = items.map(item => <div>{item}</div>)
+  const itemsList = items.map((item, index) => <span key={index}>{item}</span>)
 
-  return (
-    <span>
-      <TextLoop interval={2000}>{itemsList}</TextLoop>
-    </span>
-  )
+  return <TextLoop interval={1500}>{itemsList}</TextLoop>
 }
 
 AnimatedText.propTypes = {

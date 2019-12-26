@@ -11,12 +11,11 @@ const IndexPage = () => (
     <AboutMe
       title="Hello! I'm "
       name="Neil Wong"
-      content={"I'm a developer from San Francisco"}
-      nouns={["developer, problem solver, designer"]}
+      nouns={["developer", "problem solver", "designer"]}
     />
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
-    </div>
+    </div> */}
   </Layout>
 )
 

@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 
 import styles from "./about-me.module.scss"
 
-function AboutMe({ name, title, content, nouns }) {
+function AboutMe({ name, title, nouns }) {
   return (
     <div className={styles.about}>
       <div className={styles.content}>
@@ -17,13 +17,11 @@ function AboutMe({ name, title, content, nouns }) {
           </p>
         </div>
         <div className={styles.secondary}>
-          <p>
-            I'm a{" "}
-            <strong>
-              <AnimatedText items={["developer", "problem solver"]} />
-            </strong>{" "}
-            from San Francisco
-          </p>
+          <>I'm a </>
+          <strong>
+            <AnimatedText items={nouns} />{" "}
+          </strong>
+          from San Francisco
         </div>
       </div>
     </div>
@@ -31,8 +29,9 @@ function AboutMe({ name, title, content, nouns }) {
 }
 
 AboutMe.propTypes = {
+  name: PropTypes.string.isRequired,
+  nouns: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
-  contet: PropTypes.string,
 }
 
 export default AboutMe
