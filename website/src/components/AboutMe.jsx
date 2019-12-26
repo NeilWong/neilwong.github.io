@@ -17,15 +17,18 @@ function AboutMe({ name, title, nouns }) {
           </p>
         </div>
         <div className={styles.secondary}>
-          <>I'm a </>
+          <>A </>
           <strong>
             <AnimatedText items={nouns} />{" "}
           </strong>
           <>from San Francisco</>
         </div>
         {/* <hr className={styles.hr} /> */}
-        <p style={{ marginTop: "45%" }}></p>Projects
-        <Icon type="down" style={{ fontSize: "48px", marginTop: "45%" }} />
+        <p style={{ position: "fixed", top: "815px" }}>Projects</p>
+        <Icon
+          type="down"
+          style={{ position: "fixed", fontSize: "48px", top: "850px" }}
+        />
       </div>
     </div>
   )

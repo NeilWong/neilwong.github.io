@@ -1,39 +1,34 @@
 .header {
-  background: white;
-  margin-bottom: 1.45 rem;
-
-  .h1 {
-    margin: 0;
-  }
-
-  .link {
-    color: black;
-    text-decoration: None;
-  }
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-.structure {
-  margin: 0 auto;
-  max-width: 100%; //960 default,
-  padding: 1.45rem 1.0875rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+.logo {
+  color: black;
+  display: block;
+  float: left;
+  font-size: 44px;
+  padding: 40px;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+}
 
-  .left {
-    order: 1;
-  }
+.nav {
+  float: right;
+  padding: 20px;
+  position: relative;
 
-  .center {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    order: 2;
-    flex-basis: 45%;
-  }
-
-  .right {
-    order: 3;
+  a {
+    color: black;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 300;
+    padding: 20px;
+    position: relative;
+    text-decoration: none;
   }
 }
