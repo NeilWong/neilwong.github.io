@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import AnimatedText from "./AnimatedText"
-import styles from "./about-me.module.scss"
+import styles from "./AboutMe.module.scss"
 
 import { Icon } from "antd"
 
