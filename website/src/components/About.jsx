@@ -2,11 +2,11 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import AnimatedText from "./AnimatedText"
-import styles from "./AboutMe.module.scss"
+import styles from "./About.module.scss"
 
 import { Icon } from "antd"
 
-function AboutMe({ name, title, nouns }) {
+function About({ name, title, nouns }) {
   return (
     <div className={styles.about}>
       <div className={styles.content}>
@@ -34,10 +34,10 @@ function AboutMe({ name, title, nouns }) {
   )
 }
 
-AboutMe.propTypes = {
+About.propTypes = {
   name: PropTypes.string.isRequired,
   nouns: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
 }
 
-export default AboutMe
+export default About
