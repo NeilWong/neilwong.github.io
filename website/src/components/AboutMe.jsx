@@ -1,10 +1,10 @@
 import React from "react"
-
-import AnimatedText from "./AnimatedText"
-
 import PropTypes from "prop-types"
 
+import AnimatedText from "./AnimatedText"
 import styles from "./about-me.module.scss"
+
+import { Icon } from "antd"
 
 function AboutMe({ name, title, nouns }) {
   return (
@@ -21,8 +21,11 @@ function AboutMe({ name, title, nouns }) {
           <strong>
             <AnimatedText items={nouns} />{" "}
           </strong>
-          from San Francisco
+          <>from San Francisco</>
         </div>
+        {/* <hr className={styles.hr} /> */}
+        <Icon type="down" style={{ fontSize: "48px", marginTop: "45%" }} />
+        Projects
       </div>
     </div>
   )

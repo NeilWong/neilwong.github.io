@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import AboutMe from "../components/AboutMe"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -13,9 +12,6 @@ const IndexPage = () => (
       name="Neil Wong"
       nouns={["developer", "problem solver", "designer"]}
     />
-    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div> */}
   </Layout>
 )
 
