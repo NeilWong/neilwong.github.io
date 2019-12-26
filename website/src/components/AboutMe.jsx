@@ -24,8 +24,8 @@ function AboutMe({ name, title, nouns }) {
           <>from San Francisco</>
         </div>
         {/* <hr className={styles.hr} /> */}
+        <p style={{ marginTop: "45%" }}></p>Projects
         <Icon type="down" style={{ fontSize: "48px", marginTop: "45%" }} />
-        Projects
       </div>
     </div>
   )
