@@ -23,6 +23,10 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  /* background-color:  #121212; */
 }
 article,
 aside,
@@ -650,4 +654,8 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.content {
+  flex: 1 0 auto;
 }
