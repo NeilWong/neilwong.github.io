@@ -1,15 +1,15 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 
-import AnimatedText from "./AnimatedText"
-import styles from "./About.module.scss"
+import AnimatedText from "./AnimatedText";
+import styles from "./About.module.scss";
 
-import { Icon } from "antd"
+import { Icon } from "antd";
 
 function About({ name, title, nouns }) {
   return (
-    <div className={styles.about}>
-      <div className={styles.content}>
+    <section style={{ minHeight: "969px" }}>
+      <div className={styles.about}>
         <div className={styles.primary}>
           <p>
             {title}
@@ -27,17 +27,17 @@ function About({ name, title, nouns }) {
         <p style={{ position: "absolute", top: "815px" }}>Projects</p>
         <Icon
           type="down"
-          style={{ position: "absolute", fontSize: "48px", top: "850px" }}
+          style={{ position: "absolute", fontSize: "20px", top: "850px" }}
         />
       </div>
-    </div>
-  )
+    </section>
+  );
 }
 
 About.propTypes = {
   name: PropTypes.string.isRequired,
   nouns: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
-}
+};
 
-export default About
+export default About;

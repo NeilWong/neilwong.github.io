@@ -1,7 +1,46 @@
+a {
+  &:hover {
+    text-decoration: none;
+    color: hsla(0, 0%, 0%, 0.8);
+  }
+  &:link {
+    text-decoration: none;
+    color: hsla(0, 0%, 0%, 0.8);
+  }
+  &:active {
+    text-decoration: none;
+    color: hsla(0, 0%, 0%, 0.8);
+  }
+  &:visited {
+    text-decoration: none;
+    color: hsla(0, 0%, 0%, 0.8);
+  }
+}
+
+hr {
+  width: 50%;
+  height: 1px;
+  color: black;
+}
+
 .contact {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  padding-top: 5em;
+  padding-top: 15em;
   position: relative;
-  min-height: 969px;
+
+  .title {
+    font-size: 68px;
+    line-height: 76px;
+    color: #262626;
+    text-transform: uppercase;
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
 }
