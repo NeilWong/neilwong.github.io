@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.text}>
         Copyright © {new Date().getFullYear()} Neil Wong. Built with
-        {` `}Gatsby
+        {` `}Gatsby.
       </div>
     </footer>
   );
