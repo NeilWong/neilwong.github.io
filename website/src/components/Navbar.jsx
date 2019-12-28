@@ -1,15 +1,10 @@
-import React, { useState } from "react";
-
+import React from "react";
 import PropTypes from "prop-types";
+
+import Toggle from "./Toggle.jsx";
 import styles from "./Navbar.module.scss";
 
-const Navbar = ({ siteTitle }) => {
-  const [nightMode, setNightMode] = useState(false);
-
-  const handleChange = e => {
-    setNightMode(!nightMode);
-  };
-
+const Navbar = ({ siteTitle, handleToggle }) => {
   return (
     <header className={styles.navbar}>
       <div className={styles.navbar__items}>
@@ -22,6 +17,7 @@ const Navbar = ({ siteTitle }) => {
             <a href="#">About</a>
             <a href="#">Projects</a>
             <a href="#">Contact</a>
+            <Toggle handleToggle={handleToggle} />
           </nav>
         </div>
       </div>
@@ -31,6 +27,7 @@ const Navbar = ({ siteTitle }) => {
 
 Navbar.propTypes = {
   siteTitle: PropTypes.string,
+  handleToggle: PropTypes.func.isRequired,
 };
 
 Navbar.defaultProps = {

@@ -13,7 +13,7 @@ import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 import "./Layout.scss";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, handleToggle }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,7 +26,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Navbar siteTitle={data.site.siteMetadata.title} />
+      <Navbar
+        siteTitle={data.site.siteMetadata.title}
+        handleToggle={handleToggle}
+      />
       <div
         style={{
           margin: `0 auto`,
