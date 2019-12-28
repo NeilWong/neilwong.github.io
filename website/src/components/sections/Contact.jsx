@@ -1,5 +1,5 @@
 import React from "react";
-import PDF from "../assets/files/Resume.jsx";
+import PDF from "../../assets/files/Resume.jsx";
 
 import { Icon } from "antd";
 

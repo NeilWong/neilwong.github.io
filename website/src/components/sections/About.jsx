@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import AnimatedText from "./AnimatedText";
+import AnimatedText from "../AnimatedText";
 import styles from "./About.module.scss";
 
 import { Icon } from "antd";
@@ -24,10 +24,10 @@ function About({ name, title, nouns }) {
           <>from San Francisco</>
         </div>
         {/* <hr className={styles.hr} /> */}
-        <p style={{ position: "absolute", top: "815px" }}>Projects</p>
+        <p style={{ position: "absolute", top: "855px" }}>Projects</p>
         <Icon
           type="down"
-          style={{ position: "absolute", fontSize: "20px", top: "850px" }}
+          style={{ position: "absolute", fontSize: "20px", top: "890px" }}
         />
       </div>
     </section>
