@@ -1,10 +1,7 @@
-import PropTypes from "prop-types";
 import React, { useState } from "react";
 
-import Toggle from "react-toggle";
-
+import PropTypes from "prop-types";
 import styles from "./Navbar.module.scss";
-import "react-toggle/style.css";
 
 const Navbar = ({ siteTitle }) => {
   const [nightMode, setNightMode] = useState(false);
