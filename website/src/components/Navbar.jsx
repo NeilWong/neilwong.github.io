@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 import Toggle from "./Toggle.jsx";
 import styles from "./Navbar.module.scss";
 
-const Navbar = ({ siteTitle, handleToggle }) => {
+const Navbar = ({ siteTitle }) => {
+  const [theme, setTheme] = useState(false);
+  const [currentTheme, setCurrentTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme ") : null
+  );
+
+  const handleToggle = () => {
+    setTheme(!theme);
+    switchTheme();
+  };
+
+  const switchTheme = c => {
+    if (theme) {
+      document.documentElement.setAttribute("date-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+      localStorage.setItem("theme", "light");
+    }
+  };
+
   return (
     <header className={styles.navbar}>
       <div className={styles.navbar__items}>
@@ -27,7 +47,6 @@ const Navbar = ({ siteTitle, handleToggle }) => {
 
 Navbar.propTypes = {
   siteTitle: PropTypes.string,
-  handleToggle: PropTypes.func.isRequired,
 };
 
 Navbar.defaultProps = {

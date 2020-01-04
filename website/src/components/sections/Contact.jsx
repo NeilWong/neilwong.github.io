@@ -5,7 +5,7 @@ import { Icon } from "antd";
 
 import styles from "./Contact.module.scss";
 
-function Contact({}) {
+function Contact() {
   return (
     <section style={{ minHeight: "969px" }}>
       <div className={styles.contact}>
